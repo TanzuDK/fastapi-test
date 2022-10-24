@@ -4,7 +4,7 @@ metadata:
   name: fastapi-test
   labels:
     apps.tanzu.vmware.com/workload-type: web
-    app.kubernetes.io/part-of: fastapi-test
+    app.kubernetes.io/part-of: fastapi-accelerator
   annotations:
     autoscaling.knative.dev/minScale: "1"
 spec:
