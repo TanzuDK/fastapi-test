@@ -4,8 +4,8 @@ metadata:
   name: fastapi-test
   description: FastAPI framework
   tags:
-  - python
-  - fastapi
+    - python
+    - fastapi
   annotations:
     backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=fastapi-accelerator
 spec:
