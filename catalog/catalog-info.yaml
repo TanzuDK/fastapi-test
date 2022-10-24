@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: fastapi-test
+  description: FastAPI framework
+  tags:
+  - python
+  - fastapi
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=fastapi-accelerator
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team

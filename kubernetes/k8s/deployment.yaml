@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: fastapi-accelerator
+  name: fastapi-accelerator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: fastapi-accelerator
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: fastapi-accelerator
+        app.kubernetes.io/part-of: fastapi-accelerator
+    spec:
+      containers:
+      - image: fastapi-accelerator:latest
+        imagePullPolicy: IfNotPresent
+        livenessProbe:
+          httpGet:
+            path: /actuator/health/liveness
+            port: 5000
+        name: app
+        ports:
+        - containerPort: 5000
