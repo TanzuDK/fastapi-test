@@ -5,7 +5,7 @@ metadata:
   labels:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: fastapi-accelerator
-    #apis.apps.tanzu.vmware.com/register-api: "true"
+    apis.apps.tanzu.vmware.com/register-api: "true"
   annotations:
     autoscaling.knative.dev/minScale: "1"
 spec:
@@ -14,3 +14,12 @@ spec:
       url: https://github.com/TanzuDK/fastapi-test.git
       ref:
         branch: main
+  params:
+    - name: api_descriptor
+      value:
+        type: openapi
+        location:
+          path: "/openapi.json"
+        system: fastapi-test
+        owner: default-team
+        description: "A set of API endpoints to manage the resources within fastapi test."
