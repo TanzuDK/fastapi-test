@@ -9,8 +9,4 @@ async def root():
 
 @app.get("/dell")
 async def dell():
-    return {"message": "Hello World from Dell conf"}
-
-@app.get("/vesko")
-async def vesko():
-    return {"message": "Hello World from Dell conf"}
+    return {"message": "Hello World from Dell conf 2"}
