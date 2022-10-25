@@ -32,3 +32,17 @@ metadata:
 spec:
   owner: default-team
   domain: cloud-apps
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: default-team
+  description: default-team
+spec:
+  type: team
+  profile:
+    # Intentional no displayName for testing
+    email: default-team@tanzu.dk
+    picture: https://avatars.dicebear.com/api/identicon/team-a@example.com.svg?background=%23fff&margin=25
+  parent: development
+  children: []
