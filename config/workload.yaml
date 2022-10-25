@@ -16,7 +16,6 @@ spec:
         branch: main
   params:
     - name: api_descriptor
-      label: v1
       value:
         type: openapi
         location:
