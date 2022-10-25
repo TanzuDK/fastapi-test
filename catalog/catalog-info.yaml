@@ -6,7 +6,7 @@ metadata:
   tags:
     - python
     - fastapi
-    - API
+    - api
   links:
     - url: http://fastapi-test.default.tanzu.dk
       title: Base Url
