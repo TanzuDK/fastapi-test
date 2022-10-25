@@ -6,6 +6,13 @@ metadata:
   tags:
     - python
     - fastapi
+  links:
+    - url: http://fastapi-test.default.tanzu.dk
+      title: Base Url
+      icon: dashboard
+    - url: http://fastapi-test.default.tanzu.dk/docs
+      title: Documentation
+      icon: dashboard
   annotations:
     backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=fastapi-accelerator
 spec:
