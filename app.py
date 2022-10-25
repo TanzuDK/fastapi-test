@@ -7,6 +7,10 @@ app = FastAPI()
 async def root():
     return {"message": "Hello World from FastAPI Accelerator"}
 
-@app.get("/dell")
+@app.get("/api1")
 async def dell():
-    return {"message": "Hello World from Dell conf 2"}
+    return {"message": "Hello from api 1"}
+
+@app.get("/api2")
+async def dell():
+    return {"message": "Hello from api 2"}
