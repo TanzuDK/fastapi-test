@@ -8,6 +8,10 @@ metadata:
     apis.apps.tanzu.vmware.com/register-api: "true"
   annotations:
     autoscaling.knative.dev/minScale: "1"
+  links:
+    - url: http://fastapi-test.default.tanzu.dk
+      title: Base URL
+      icon: dashboard
 spec:
   source:
     git:
