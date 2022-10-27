@@ -8,10 +8,10 @@ metadata:
     - fastapi
     - api
   links:
-    - url: http://fastapi-test.default.tanzu.dk
+    - url: https://fastapi-test.default.tanzu.dk
       title: Base Url
       icon: dashboard
-    - url: http://fastapi-test.default.tanzu.dk/docs
+    - url: https://fastapi-test.default.tanzu.dk/docs
       title: Documentation
       icon: dashboard
   annotations:
