@@ -2,6 +2,10 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   name: fastapi-test
+  links:
+    - url: http://fastapi-test.default.tanzu.dk
+      title: Base URL
+      icon: dashboard
   labels:
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/part-of: fastapi-accelerator
@@ -23,8 +27,3 @@ spec:
         system: fastapi-test
         owner: default-team
         description: "A set of API endpoints to manage the resources within fastapi test."
-      metadata:
-        links:
-          - url: http://fastapi-test.default.tanzu.dk
-            title: Base URL
-            icon: dashboard
