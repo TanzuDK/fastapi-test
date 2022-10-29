@@ -19,7 +19,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: default-team
+  owner: team-a
   system: demo
 ---
 apiVersion: backstage.io/v1alpha1
@@ -30,19 +30,5 @@ metadata:
   annotations:
     "backstage.io/techdocs-ref": dir:.
 spec:
-  owner: default-team
+  owner: team-a
   domain: cloud-apps
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: default-team
-  description: default-team
-spec:
-  type: team
-  profile:
-    # Intentional no displayName for testing
-    email: default-team@tanzu.dk
-    picture: https://avatars.dicebear.com/api/identicon/team-a@example.com.svg?background=%23fff&margin=25
-  parent: development
-  children: []
