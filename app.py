@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World from FastAPI Accelerator"}
+    return {"message": "Hello World from FastAPI Accelerator with Auto API registration"}
 
 @app.get("/api1")
 async def devopsconf1():
