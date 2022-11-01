@@ -32,3 +32,5 @@ metadata:
 spec:
   owner: team-a
   domain: cloud-apps
+  providesApis:
+    - kwhprice-api
