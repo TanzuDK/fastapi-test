@@ -19,7 +19,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: team-a
+  owner: denmark-team
   system: demo
   providesApis:
     - kwhprice-api
