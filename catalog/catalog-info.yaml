@@ -32,5 +32,5 @@ metadata:
   annotations:
     "backstage.io/techdocs-ref": dir:.
 spec:
-  owner: team-a
+  owner: denmark-team
   domain: cloud-apps
