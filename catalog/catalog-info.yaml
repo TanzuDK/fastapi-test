@@ -29,8 +29,6 @@ kind: System
 metadata:
   name: demo
   description: Demo Application
-  annotations:
-    "backstage.io/techdocs-ref": dir:.
 spec:
   owner: denmark-team
   domain: cloud-apps
