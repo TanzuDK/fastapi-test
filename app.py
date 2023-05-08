@@ -28,9 +28,9 @@ async def root():
 
 @app.get("/api1")
 async def devopsconf1():
-    return {"message": "Hello from api 1"}
+    return {"message": "Hello World from api 1"}
 
 
 @app.get("/api2")
 async def devopsconf2():
-    return {"message": "Hello from api 2"}
+    return {"message": "Hello World from api 2"}
