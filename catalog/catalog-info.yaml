@@ -8,10 +8,10 @@ metadata:
     - fastapi
     - api
   links:
-    - url: https://fastapi-test.default.vmlab.tanzu.dk
+    - url: https://fastapi-test.dev.tap-gitops.tanzu.dk/
       title: Base Url
       icon: dashboard
-    - url: https://fastapi-test.default.vmlab.tanzu.dk/docs
+    - url: https://fastapi-test.dev.tap-gitops.tanzu.dk/docs
       title: Documentation
       icon: dashboard
   annotations:
