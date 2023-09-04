@@ -24,3 +24,6 @@ spec:
         system: demo
         owner: denmark-team
         description: "A set of API endpoints to manage the resources within fastapi test."
+    - name: testing_pipeline_matching_labels
+      value:
+        apps.tanzu.vmware.com/pipeline: test-python
